@@ -49,23 +49,60 @@ a:hover{
 	z-index: -3;
     background: linear-gradient(to right, #91ffdc 0%,#91ffdc 0%, #c4f5f4 100%);
 }
-.navbar:before{
-	content: "";
-	position: absolute;
-	top: 0%;
-	bottom: 0%;
-	left: 0;
-	right: 0;
-	opacity: .9;
-	z-index: -2;
-	background-color:  #16c9f6;
-    
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all ease .65s;
+ 
+ background-color: #16c9f6;
+ color: white;
+ opacity: .7;
+  width: 100%;
+  z-index: -3;
 }
-.nav-item a{
-	 color: white!important;
-	  font-size: bold;
+
+span {
+  font-size: 24px;
+  margin-left: 10px;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/**
+* Scrolling CSS
+*/
+nav.scroll {
+  padding: 10px;
+  background: black;
+  position: fixed;
+  opacity: 100%;
+}
+
+nav.scroll span {
+  font-size: 18px;
+  color: white;
+}
+
+nav.scroll li {
+  color: white;
+}
+
+
+ /***********navbar complete*****/
+
+
 .section{
 	width: 100%;
 	height: inherit;
